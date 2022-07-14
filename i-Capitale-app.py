@@ -29,7 +29,7 @@ def load_lottieurl(url: str):
 def MainPage():
     # front end elements of the web page
     html_temp = """ 
-                <div style ="background-color:#f1c024;padding:13px"> 
+                <div style ="background-color:gold;padding:13px"> 
                 <h1 style ="color:black;text-align:center;">i-Capitale App</h1> 
                 </div> 
                 """
@@ -57,11 +57,24 @@ def MainPage():
     st.write("\n")
 
 
-    left_col, right_col = st.columns(2)
+    left_col,right_col = st.columns(2)
 
     with left_col:
         st.header("How it works?")
-        st.write("App Tour ~ or just briefly explain?")
+        st.image(
+            "https://miro.medium.com/max/1400/1*Eg-kn38i5jR3g6UZy2vmXw.jpeg"
+        )
+    with right_col:
+        st.text("\n")
+        st.text("\n")
+        st.text("\n")
+
+        st.write("#### Predicting Stock Market Trends")
+        st.write("The nature of stock market movement has always been ambiguous for investor because of"
+                "various influential factors. ***i-Capitale*** aims to significantly reduce the risk of trend"
+                " prediction with machine learning algorithms.")
+
+    st.write("Add a video tour here?If got time to do so lah")
     st.text("\n")
     st.text("\n")
     st.text("\n")
@@ -236,6 +249,8 @@ def OurModel():
 
     st.text("\n")
     st.text("\n")
+    st.text("\n")
+    st.text("\n")
 
     # front end elements of the web page
     html_temp = """ 
@@ -249,7 +264,7 @@ def OurModel():
     st.text("\n")
     st.text("\n")
 
-
+    st.subheader("Here wanna do selected box to select a certain company and then visualise all the data?")
     st.subheader("Volume vs Stock movement")
     st.image(
         "https://images.moneycontrol.com/static-mcnews/2018/01/BSE_Sensex_Budget_2017_volatile1.jpg?impolicy=website&width=770&height=431",
@@ -328,7 +343,7 @@ def Results():
         st.title("Stock Prediction")
 
     st.markdown(
-        '<div style="text-align: justify;">Daily closing prices of 22 selected stocks for the next 90 days are predicted...</div>',
+        '<div style="text-align: justify;">Daily closing prices of 22 selected stocks for the next 90 days are predicted...Result for the closing price...</div>',
         unsafe_allow_html=True)
     st.text("\n")
 
@@ -340,16 +355,26 @@ def Results():
     # get the historical prices for this ticker
     tickerDf = tickerData.history(period='1d', start='2010-5-31', end='2020-5-31')
     # Open	High	Low	Close	Volume	Dividends	Stock Splits
+    st.subheader("here also can put selected box for 22 companies for users to choose then show..and the sentiment analysis/financial crisis also hv to add on")
 
     st.write("""
-           ## Closing Price 					
+           ## Closing Price of that chosen company de 					
            """)
     st.line_chart(tickerDf.Close)
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
 
-    st.write("""
-               ## Closing Price
-               """)
-    st.line_chart(tickerDf.Close)
+    st.subheader("Future Prediction(Closing Price)")
+    st.text_input("Date/Month/Year")
+    if st.button("Predict"):
+        st.write("Closing Price: RM111")
+
 
 
 
@@ -470,7 +495,7 @@ with st.sidebar:
     st.title("i-Capitale App")
     selected=option_menu(
         menu_title="Menu",
-        options=["Home Page","Our Model", "Results", "Consultants","About Us"],
+        options=["Home Page","Our Model", "Prediction Results", "Consultants","About Us"],
         icons=None,
         menu_icon="bookmark-star",
         default_index=0,
@@ -482,7 +507,7 @@ if selected == "Home Page":
 elif selected == "Our Model":
     OurModel()
 
-elif selected == "Results":
+elif selected == "Prediction Results":
     Results()
 
 elif selected == "Consultants":
