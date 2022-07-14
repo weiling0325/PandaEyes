@@ -249,34 +249,45 @@ def OurModel():
     st.text("\n")
     st.text("\n")
 
-    st.subheader("Volume vs Stock movement")
-    image1 = Image.open('https://images.moneycontrol.com/static-mcnews/2018/01/BSE_Sensex_Budget_2017_volatile1.jpg?impolicy=website&width=770&height=431')
-    st.image(image1)
 
+    st.subheader("Volume vs Stock movement")
+    st.image(
+        "https://images.moneycontrol.com/static-mcnews/2018/01/BSE_Sensex_Budget_2017_volatile1.jpg?impolicy=website&width=770&height=431",
+        width=600,  # Manually Adjust the width of the image as per requirement
+    )
     st.text("\n")
     st.subheader("Open Price vs Stock movement")
-    image2 = Image.open('https://images.moneycontrol.com/static-mcnews/2018/01/BSE_Sensex_Budget_2017_volatile1.jpg?impolicy=website&width=770&height=431')
-    st.image(image2)
-
+    st.image(
+        "https://images.moneycontrol.com/static-mcnews/2018/01/BSE_Sensex_Budget_2017_volatile1.jpg?impolicy=website&width=770&height=431",
+        width=600,  # Manually Adjust the width of the image as per requirement
+    )
     st.text("\n")
     st.subheader("Close Price vs Stock movement")
-    image3 = Image.open('https://images.moneycontrol.com/static-mcnews/2018/01/BSE_Sensex_Budget_2017_volatile1.jpg?impolicy=website&width=770&height=431')
-    st.image(image3)
+    st.image(
+        "https://images.moneycontrol.com/static-mcnews/2018/01/BSE_Sensex_Budget_2017_volatile1.jpg?impolicy=website&width=770&height=431",
+        width=600,  # Manually Adjust the width of the image as per requirement
+    )
     st.markdown("\n")
     st.subheader("Confusion Matrix")
     st.write("##### Training")
-    image4 = Image.open('https://images.moneycontrol.com/static-mcnews/2018/01/BSE_Sensex_Budget_2017_volatile1.jpg?impolicy=website&width=770&height=431')
-    st.image(image4)
+    st.image(
+        "https://images.moneycontrol.com/static-mcnews/2018/01/BSE_Sensex_Budget_2017_volatile1.jpg?impolicy=website&width=770&height=431",
+        width=600,  # Manually Adjust the width of the image as per requirement
+    )
     st.text("\n")
     st.text("\n")
     st.write("##### Validation")
-    image5 = Image.open('https://images.moneycontrol.com/static-mcnews/2018/01/BSE_Sensex_Budget_2017_volatile1.jpg?impolicy=website&width=770&height=431')
-    st.image(image5)
+    st.image(
+        "https://images.moneycontrol.com/static-mcnews/2018/01/BSE_Sensex_Budget_2017_volatile1.jpg?impolicy=website&width=770&height=431",
+        width=600,  # Manually Adjust the width of the image as per requirement
+    )
     st.text("\n")
     st.text("\n")
     st.write("##### Testing")
-    image6 = Image.open('https://images.moneycontrol.com/static-mcnews/2018/01/BSE_Sensex_Budget_2017_volatile1.jpg?impolicy=website&width=770&height=431')
-    st.image(image6)
+    st.image(
+        "https://images.moneycontrol.com/static-mcnews/2018/01/BSE_Sensex_Budget_2017_volatile1.jpg?impolicy=website&width=770&height=431",
+        width=600,  # Manually Adjust the width of the image as per requirement
+    )
     st.text("\n")
     st.text("\n")
 
