@@ -239,7 +239,7 @@ def OurModel():
 
     # front end elements of the web page
     html_temp = """ 
-                    <div style ="background-color:#DFF6FF;padding:13px"> 
+                    <div style ="background-color:#ecdd9c;padding:13px"> 
                     <h2 style ="color:black;text-align:left;">Data Visualization</h2> 
                     </div> 
                     """
