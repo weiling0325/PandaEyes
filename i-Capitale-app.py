@@ -231,8 +231,7 @@ def OurModel():
     st.write("##### There are *4* technical indicators used in technical analysis:")
     """ 
     * Exponential Moving Average(EMA)
-    * Moving Average Convergence 
-    * Divergence(MACD)
+    * Moving Average Convergence Divergence(MACD)
     * Volume Oscillator
     * Relative Strength Index(RSI) 
     """
